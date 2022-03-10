@@ -470,6 +470,10 @@ export function recmaDocument(options = {}) {
         attributes: [
           {
             type: 'JSXSpreadAttribute',
+            argument: {type: 'Identifier', name: "(typeof meta === 'undefined') ? {} : meta"}
+          },
+          {
+            type: 'JSXSpreadAttribute',
             argument: {type: 'Identifier', name: 'props'}
           }
         ],
